@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #3494e6, #ec6ead);
+    overflow: hidden;
+    animation: changeColor 5s infinite;
+    cursor: pointer;
+}
+
+.glass-container {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    outline: none;
+}
+
+button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #3494e6;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #3cb0fd;
+}
+
+.gun-cursor {
+    position: absolute;
+    font-size: 24px;
+    /* Adjust the size as needed */
+    color: olive;
+    pointer-events: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        background: linear-gradient(45deg, #3494e6, #ec6ead);
+    }
+
+    25% {
+        background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    }
+
+    50% {
+        background: linear-gradient(45deg, #7effdb, #4facfe);
+    }
+
+    75% {
+        background: linear-gradient(45deg, #ffa8a8, #fec3a0);
+    }
+
+    100% {
+        background: linear-gradient(45deg, #3494e6, #ec6ead);
+    }
+}
