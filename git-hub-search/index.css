@@ -1,0 +1,334 @@
+/* RESET CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: inline;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom css */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Responsive image
+.card-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+} */
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* CSS */
+
+:root {
+  --primaryColor: rgb(250, 246, 24);
+  --secondaryColor: crimson;
+  --black: rgb(0, 0, 0);
+}
+
+.nav-container {
+  margin-top: 5rem;
+}
+
+.header-heading {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.main {
+  margin-top: 2rem;
+}
+
+/* .main-heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 8rem;
+} */
+
+.intruction-container {
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 22rem;
+  height: 5.5rem;
+}
+
+.intruction-heading {
+  font-size: 1.8rem;
+  color: var(--secondaryColor);
+  text-align: center;
+  padding-top: 2.2rem;
+}
+
+.input-box-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+}
+
+/* Input container */
+.input-container {
+  margin-top: 4rem;
+  /* background-color: aqua; */
+}
+
+/*  */
+label {
+  font-size: 1.4rem;
+  /* font-weight: ; */
+  color: var(--black);
+}
+
+.input {
+  font-size: 1.1rem;
+  letter-spacing: 0.02rem;
+  width: 75%;
+  padding: 1rem 0.5rem;
+  border-radius: 5px;
+  background-color: rgb(235, 235, 235);
+  border: none;
+}
+
+/* Submit buttons */
+.btn {
+  margin-top: 0.5rem;
+  color: var(--primaryColor);
+  background-color: var(--secondaryColor);
+  padding: 0.8rem 2rem;
+  border: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: var(--black);
+}
+
+.btn-battle-container {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.btn-battle {
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  padding: 1.2rem 3rem;
+  color: var(--primaryColor);
+  background-color: var(--black);
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.btn-battle:hover {
+  background-color: var(--secondaryColor);
+}
+
+/*---------- Second page ----------*/
+
+/* Card container */
+.card-container {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 6rem;
+  justify-content: space-around;
+  margin-top: 4rem;
+}
+
+/* Card item */
+.card-item {
+  background-color: var(--black);
+  color: var(--primaryColor);
+  width: 20rem;
+  border-radius: 5px;
+}
+
+/* Card top */
+.card-top {
+  text-align: center;
+}
+
+/* Result heading */
+.result-heading {
+  display: inline-block;
+  color: var(--primaryColor);
+  font-size: 1.2rem;
+  text-align: center;
+  /* padding: 1rem 0; */
+  margin: 1rem 0;
+}
+
+/* Profile image */
+.pro-image {
+  width: 100%;
+}
+
+/* Card bottom part */
+.card-bottom {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.8rem;
+  margin: 1rem;
+  letter-spacing: 0.04rem;
+}
+
+/* Reset button container */
+.btn-container {
+  text-align: center;
+  margin: 2rem;
+}
+
+/* Reset button */
+.btn-reset {
+  color: var(--primaryColor);
+  background-color: var(--black);
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  margin: 0 auto;
+}

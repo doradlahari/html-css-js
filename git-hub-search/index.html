@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Github User Search</title>
+  </head>
+  <body>
+    <header class="header wrapper">
+      <nav class="nav-container">
+        <h1 class="header-heading">Github Battle Royal</h1>
+      </nav>
+    </header>
+    <main class="main wrapper">
+      <div class="intruction-container">
+        <h3 class="intruction-heading">Enter two Github users</h3>
+      </div>
+      <div class="input-container">
+        <div class="input-box-container">
+          <div class="input-box">
+            <label>
+              Player one
+              <br />
+              <input
+                id="userName1"
+                type="text"
+                class="input"
+                placeholder="github username"
+                required
+              />
+            </label>
+            <button class="btn" id="btn1">submit</button>
+          </div>
+          <div class="input-box">
+            <label>
+              Player two
+              <br />
+              <input
+                id="userName2"
+                type="text"
+                class="input"
+                placeholder="github username"
+                required
+              />
+            </label>
+            <button class="btn" id="btn2">submit</button>
+          </div>
+        </div>
+        <div class="btn-battle-container">
+          <button class="btn-battle">Battle</button>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+body {
+  background: #fff;
+  font-family: sans-serif;
+  text-align: center;
+}
+h1 {
+  margin: auto;
+  font-weight: 300;
+}
+canvas {
+  background: #fff;
+  display: block;
+  margin: 30px auto 10px;
+  border: 1px solid black;
+  box-shadow: 0 4px 5px 0 #222;
+  cursor: crosshair;
+}
+.controls {
+  min-height: 60px;
+  margin: 0 auto;
+  width: 600px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  float: left;
+  padding: 10px 0 20px;
+  width: 100%;
+  text-align: center;
+}
+
+ul li,
+#newColor {
+  display: block;
+  height: 54px;
+  width: 54px;
+  border-radius: 60px;
+  cursor: pointer;
+  border: 0;
+}
+
+ul li {
+  display: inline-block;
+  margin: 0 5px 10px;
+}
+
+.red {
+  background: #fc4c4f;
+}
+
+.blue {
+  background: #4fa3fc;
+}
+
+.yellow {
+  background: #ecd13f;
+}
+
+.selected {
+  box-shadow: 0px 0px 10px 5px #222;
+  width: 54px;
+  height: 54px;
+}
+
+#thickness-section {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  background: #fff;
+  box-shadow: 0 4px 5px 0 #222;
+  color: #000;
+  outline: none;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  line-height: 40px;
+}
+#revealColorSelect {
+  border: 1px solid black;
+  margin: 10px auto;
+  padding: 5px 20px;
+  width: 200px;
+}
+
+/* New Color Palette */
+#colorSelect {
+  background: #fff;
+  border: 1px solid black;
+  clear: both;
+  margin: 20px auto 0;
+  padding: 10px;
+  width: 305px;
+  position: relative;
+  display: none;
+}
+#colorSelect:after {
+  bottom: 100%;
+  left: 50%;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-width: 10px;
+  margin-left: -10px;
+}
+
+#newColor {
+  width: 80px;
+  height: 80px;
+  border-radius: 3px;
+  box-shadow: none;
+  float: left;
+  border: none;
+  margin: 10px 20px 20px 10px;
+}
+.sliders p {
+  margin: 8px 0;
+  vertical-align: middle;
+}
+.sliders label {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  width: 35px;
+  font-size: 14px;
+  color: #6d574e;
+}
+.sliders input {
+  position: relative;
+  top: 2px;
+}
+#colorSelect button {
+  border: none;
+  border-top: 1px solid #6a845f;
+  clear: both;
+  margin: 10px -10px -7px;
+  padding: 5px 10px;
+  width: 325px;
+}
