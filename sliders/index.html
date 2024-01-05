@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #1a202c;
+        color: #e2e8f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .slider-container {
+        position: relative;
+        width: 80vw;
+        max-width: 800px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .slider-wrapper {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .slide {
+        min-width: 100%;
+        box-sizing: border-box;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .prev,
+      .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        cursor: pointer;
+        color: #e2e8f0;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        outline: none;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .prev {
+        left: 10px;
+      }
+
+      .next {
+        right: 10px;
+      }
+    </style>
+    <title>Bikers Image Slider</title>
+  </head>
+  <body>
+    <div class="slider-container">
+      <div class="slider-wrapper">
+        <div class="slide">
+          <img
+            src="https://via.placeholder.com/800x400?text=Biker+1"
+            alt="Biker 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://via.placeholder.com/800x400?text=Biker+2"
+            alt="Biker 2"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://via.placeholder.com/800x400?text=Biker+3"
+            alt="Biker 3"
+          />
+        </div>
+        <!-- Add more slides as needed -->
+      </div>
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <script>
+      let currentSlide = 0;
+
+      function showSlide(index) {
+        const wrapper = document.querySelector(".slider-wrapper");
+        const slides = document.querySelectorAll(".slide");
+        const totalSlides = slides.length;
+
+        if (index >= totalSlides) {
+          currentSlide = 0;
+        } else if (index < 0) {
+          currentSlide = totalSlides - 1;
+        } else {
+          currentSlide = index;
+        }
+
+        const translateValue = -currentSlide * 100 + "vw";
+        wrapper.style.transform = `translateX(${translateValue})`;
+      }
+
+      function prevSlide() {
+        showSlide(currentSlide - 1);
+      }
+
+      function nextSlide() {
+        showSlide(currentSlide + 1);
+      }
+
+      // Automatic slide change every 3 seconds
+      setInterval(nextSlide, 3000);
+    </script>
+  </body>
+</html>

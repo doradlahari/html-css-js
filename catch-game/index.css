@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-color: #caf0f8;
+  display: grid;
+  margin: auto;
+}
+
+button {
+  background-color: #03045e;
+  border-radius: 15px;
+  position: relative;
+  padding: 1rem;
+  border: none;
+  color: #ffffff;
+  font-family: "Delicious Handrawn", sans-serif;
+  font-size: 1.2rem;
+
+  -webkit-box-shadow: 5px 5px 9px 5px #000000;
+  box-shadow: 5px 5px 9px 5px #000000;
+}

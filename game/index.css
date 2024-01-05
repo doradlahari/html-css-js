@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  /* background-color: #F1DBBF; */
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.players {
+  justify-content: center;
+  display: flex;
+  border: solid 1px #b99b6b;
+  border-radius: 2rem;
+  /* width: 100%;   */
+  background-color: #f1dbbf;
+  align-items: center;
+  font-size: 1rem;
+  margin-top: 10%;
+}
+
+.players div {
+  padding: 20px;
+}
+
+.players div.active {
+  background-color: #d66a52;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  text-align: center;
+  border-radius: 2rem;
+  color: white;
+}
+
+.game-board {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.cell {
+  height: 100px;
+  width: 100px;
+  border: solid 2px #b99b6b;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.X {
+  color: #aa5656;
+}
+
+.O {
+  color: #698269;
+}
+
+/* .cell:nth-child(  "type cell no"){we can write in n*N N=no of cells only if are in any same tables 
+    "give css here"
+} */
+.result {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  /* background: #C27664; */
+  background: rgba(243, 146, 146, 0.24);
+  /* background: rgba(0, 0, 0, 0.5); */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.result h1 {
+  color: #fff;
+  font-size: 50px;
+  background: rgba(178, 50, 22, 0.598);
+  padding: 15px;
+  border-radius: 3rem;
+}
+
+.result button {
+  padding: 1rem 2rem;
+  background: #d66a52;
+  border-radius: 3rem;
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.inactive {
+  display: none;
+}
+
+.disabled {
+  pointer-events: none;
+}

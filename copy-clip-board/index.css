@@ -1,0 +1,71 @@
+body {
+  background: #63d5da;
+  font-family: verdana;
+}
+textarea {
+  resize: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --fbm-border-standard: 1px solid rgba(0, 0, 0, 0.2);
+  --fbm-padding-standard: 10px 20px;
+  --fbm-color-text: crimson;
+  --fbm-color-primary: goldenrod;
+}
+#fbm-logo {
+  width: 200px;
+  height: 150px;
+}
+.fbm-logo-wrapper {
+  height: inherit;
+  width: inherit;
+}
+#fbm-logo img#fbm-logo-img {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+.parent {
+  position: relative;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+mark {
+  padding: 20px;
+}
+
+/* Start Custom Styles */
+.fbm-content-wrapper {
+  background: lightseagreen;
+  padding: 40px;
+  box-shadow: 0 0 20px -5px black;
+}
+.fbm-hero-title {
+  margin-bottom: 20px;
+}
+#fbm-copy-btn {
+  padding: 5px 10px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+  background: #6cc1b3;
+  cursor: pointer;
+}
+#fbm-test-paste {
+  display: block;
+  border: none;
+  width: 100%;
+  padding: var(--fbm-padding-standard);
+}
+#fbm-test-paste:focus {
+  outline: none;
+  border: none;
+}
