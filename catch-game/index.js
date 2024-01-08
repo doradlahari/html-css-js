@@ -1,10 +1,10 @@
 const colours = [
-  "#F7EC09",
-  "#F637EC",
+  "#F7FC09",
+  "#F437EC",
   "#37E2D5",
   "#FF4949",
-  "#06FF00",
-  "#FF0075",
+  "#06FA00",
+  "#FF0575",
 ];
 
 const messages = ["Try again", "You can't catch me", "Still very close"];
