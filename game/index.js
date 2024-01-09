@@ -23,7 +23,7 @@ const WINNING_CONDITIONS = [
 let toggleTurn = true;
 cellElements.forEach((cell) => {
   cell.onclick = () => {
-    let currentPlayer = toggleTurn ? playerO : playerX;
+    let currentPlayer = toggleTurn ? playerX : playerO;
     cell.classList.add("disabled");
     addInCell(cell, currentPlayer);
     if (winnerCheck(currentPlayer)) {

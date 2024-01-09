@@ -5,54 +5,252 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/gill-sans-mt-2"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <title>Github User Search</title>
   </head>
   <body>
-    <header class="header wrapper">
-      <nav class="nav-container">
-        <h1 class="header-heading">Github Battle Royal</h1>
-      </nav>
-    </header>
-    <main class="main wrapper">
-      <div class="intruction-container">
-        <h3 class="intruction-heading">Enter two Github users</h3>
+    <div class="container mt-5">
+      <div class="row">
+        <div
+          class="d-flex justify-content-center align-items-center icons-arrangement"
+        >
+          Follow me more!
+        </div>
+        <div
+          class="d-flex justify-content-center align-items-center icons-arrangement"
+        >
+          <a
+            href="https://www.linkedin.com/in/hari-doradla-925281207/"
+            target="_blank"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://github.com/doradlahari?tab=repositories"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              class="octicon octicon-mark-github"
+              height="24"
+              version="1.1"
+              viewBox="0 0 16 16"
+              width="24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              ></path>
+            </svg>
+          </a>
+          <a href="https://www.behance.net/doradlahari" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14h-8.027c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"
+              />
+            </svg>
+          </a>
+        </div>
       </div>
-      <div class="input-container">
-        <div class="input-box-container">
-          <div class="input-box">
-            <label>
-              Player one
-              <br />
-              <input
-                id="userName1"
-                type="text"
-                class="input"
-                placeholder="github username"
-                required
-              />
-            </label>
-            <button class="btn" id="btn1">submit</button>
-          </div>
-          <div class="input-box">
-            <label>
-              Player two
-              <br />
-              <input
-                id="userName2"
-                type="text"
-                class="input"
-                placeholder="github username"
-                required
-              />
-            </label>
-            <button class="btn" id="btn2">submit</button>
+      <div class="row mt-5">
+        <div
+          class="d-flex justify-content-center align-items-center icons-arrangement"
+        >
+          <?xml version="1.0" encoding="iso-8859-1"?>
+          <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) -->
+          <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+          <svg
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            width="465.925px"
+            height="465.925px"
+            viewBox="0 0 465.925 465.925"
+            style="enable-background: new 0 0 465.925 465.925"
+            xml:space="preserve"
+          >
+            <g>
+              <g id="_x34_8_49_">
+                <g>
+                  <path
+                    d="M88.066,169.652c-20.659,3.066-28.628,7.501-45.04,25.076c-18.39,19.694-30.219,51.143-29.696,81.088 c0,33.438,10.888,63.26,27.897,82.72c-0.034,0.288-0.056,0.579-0.056,0.876v58.372c0,4.122,3.342,7.464,7.464,7.464h71.601 c4.123,0,7.464-3.342,7.464-7.464v-58.372c0-0.764-0.116-1.499-0.329-2.191c17.83-23.558,28.244-56.925,27.345-67.464 c-1.112-13.039-14.631-33.254-31.016-28.374c-13.384,3.986-21.368,22.596-29.697,21.611c-7.05-0.834-4.46-13.789,3.135-26.398 c12.311-20.436,61.373,8.416,65.992-30.188C167.752,187.801,134.756,162.724,88.066,169.652z M112.773,410.32H56.101v-43.444 h56.672V410.32z"
+                  />
+                  <path
+                    d="M422.897,194.729c-16.409-17.575-24.38-22.01-45.039-25.076c-46.689-6.929-79.687,18.148-75.066,56.754 s53.682,9.754,65.991,30.188c7.597,12.609,10.186,25.564,3.136,26.398c-8.328,0.982-16.313-17.625-29.696-21.611 c-16.385-4.88-29.903,15.335-31.016,28.374c-0.899,10.539,9.515,43.905,27.346,67.462c-0.213,0.694-0.329,1.43-0.329,2.193 v58.372c0,4.122,3.342,7.464,7.464,7.464h71.602c4.122,0,7.464-3.342,7.464-7.464v-58.372c0-0.297-0.022-0.588-0.056-0.875 c17.009-19.46,27.897-49.281,27.897-82.721C453.115,245.871,441.287,214.423,422.897,194.729z M409.823,410.32h-56.674v-43.444 h56.674V410.32z"
+                  />
+                  <path
+                    d="M283.09,216.996c-0.021-0.122-0.025-0.244-0.059-0.367l-0.027-0.104c-0.146-0.664-0.324-1.32-0.521-1.971L241.43,59.775 c12.864-3.556,22.341-15.357,22.341-29.337C263.771,13.654,250.115,0,233.331,0s-30.438,13.654-30.438,30.438 c0,14.025,9.537,25.858,22.465,29.372l-38.685,152.018c-1.356,3.133-2.093,6.452-2.093,9.892c0,0.337,0.023,0.669,0.037,1.004 h-0.037v211.833h0.197c2.181,17.574,23.411,31.367,49.297,31.367c25.885,0,47.117-13.793,49.297-31.367h0.196V222.724h-0.036 c0.014-0.335,0.036-0.667,0.036-1.004C283.567,220.116,283.397,218.541,283.09,216.996z M200.848,196.262l27.534-108.197v99.538 C217.843,188.441,208.309,191.569,200.848,196.262z M267.406,196.33c-7.824-4.951-17.948-8.174-29.126-8.828V86.515 L267.406,196.33z M212.791,30.438c0-11.326,9.214-20.54,20.54-20.54s20.54,9.214,20.54,20.54c0,9.398-6.352,17.323-14.982,19.756 l-0.658-2.485c-0.347-2.396-2.407-4.235-4.898-4.235c-2.504,0-4.574,1.86-4.904,4.273l-0.625,2.455 C219.157,47.779,212.791,39.848,212.791,30.438z"
+                  />
+                </g>
+              </g>
+            </g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+            <g></g>
+          </svg>
+          <span class="header-heading"
+            >Github Battle Royal
+
+            <?xml version="1.0" encoding="iso-8859-1"?>
+            <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) -->
+            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="465.925px"
+              height="465.925px"
+              viewBox="0 0 465.925 465.925"
+              style="enable-background: new 0 0 465.925 465.925"
+              xml:space="preserve"
+            >
+              <g>
+                <g id="_x34_8_49_">
+                  <g>
+                    <path
+                      d="M88.066,169.652c-20.659,3.066-28.628,7.501-45.04,25.076c-18.39,19.694-30.219,51.143-29.696,81.088 c0,33.438,10.888,63.26,27.897,82.72c-0.034,0.288-0.056,0.579-0.056,0.876v58.372c0,4.122,3.342,7.464,7.464,7.464h71.601 c4.123,0,7.464-3.342,7.464-7.464v-58.372c0-0.764-0.116-1.499-0.329-2.191c17.83-23.558,28.244-56.925,27.345-67.464 c-1.112-13.039-14.631-33.254-31.016-28.374c-13.384,3.986-21.368,22.596-29.697,21.611c-7.05-0.834-4.46-13.789,3.135-26.398 c12.311-20.436,61.373,8.416,65.992-30.188C167.752,187.801,134.756,162.724,88.066,169.652z M112.773,410.32H56.101v-43.444 h56.672V410.32z"
+                    />
+                    <path
+                      d="M422.897,194.729c-16.409-17.575-24.38-22.01-45.039-25.076c-46.689-6.929-79.687,18.148-75.066,56.754 s53.682,9.754,65.991,30.188c7.597,12.609,10.186,25.564,3.136,26.398c-8.328,0.982-16.313-17.625-29.696-21.611 c-16.385-4.88-29.903,15.335-31.016,28.374c-0.899,10.539,9.515,43.905,27.346,67.462c-0.213,0.694-0.329,1.43-0.329,2.193 v58.372c0,4.122,3.342,7.464,7.464,7.464h71.602c4.122,0,7.464-3.342,7.464-7.464v-58.372c0-0.297-0.022-0.588-0.056-0.875 c17.009-19.46,27.897-49.281,27.897-82.721C453.115,245.871,441.287,214.423,422.897,194.729z M409.823,410.32h-56.674v-43.444 h56.674V410.32z"
+                    />
+                    <path
+                      d="M283.09,216.996c-0.021-0.122-0.025-0.244-0.059-0.367l-0.027-0.104c-0.146-0.664-0.324-1.32-0.521-1.971L241.43,59.775 c12.864-3.556,22.341-15.357,22.341-29.337C263.771,13.654,250.115,0,233.331,0s-30.438,13.654-30.438,30.438 c0,14.025,9.537,25.858,22.465,29.372l-38.685,152.018c-1.356,3.133-2.093,6.452-2.093,9.892c0,0.337,0.023,0.669,0.037,1.004 h-0.037v211.833h0.197c2.181,17.574,23.411,31.367,49.297,31.367c25.885,0,47.117-13.793,49.297-31.367h0.196V222.724h-0.036 c0.014-0.335,0.036-0.667,0.036-1.004C283.567,220.116,283.397,218.541,283.09,216.996z M200.848,196.262l27.534-108.197v99.538 C217.843,188.441,208.309,191.569,200.848,196.262z M267.406,196.33c-7.824-4.951-17.948-8.174-29.126-8.828V86.515 L267.406,196.33z M212.791,30.438c0-11.326,9.214-20.54,20.54-20.54s20.54,9.214,20.54,20.54c0,9.398-6.352,17.323-14.982,19.756 l-0.658-2.485c-0.347-2.396-2.407-4.235-4.898-4.235c-2.504,0-4.574,1.86-4.904,4.273l-0.625,2.455 C219.157,47.779,212.791,39.848,212.791,30.438z"
+                    />
+                  </g>
+                </g>
+              </g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+            </svg>
+          </span>
+        </div>
+      </div>
+
+      <!-- card section with input boxes -->
+      <div class="row mt-5">
+        <div
+          class="d-flex justify-content-center align-items-center icons-arrangement"
+        >
+          <h3 class="intruction-heading">Enter two Github users</h3>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">One of three columns</div>
+            <div class="col-sm">One of three columns</div>
+            <div class="col-sm">One of three columns</div>
           </div>
         </div>
-        <div class="btn-battle-container">
-          <button class="btn-battle">Battle</button>
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="input-box">
+              <label>
+                Player one
+                <br />
+                <input
+                  id="userName1"
+                  type="text"
+                  class="input"
+                  placeholder="github username"
+                  required
+                />
+              </label>
+              <button class="btn" id="btn1">submit</button>
+            </div>
+          </div>
+          <div class="col-xl-12">
+            <div class="input-box">
+              <label>
+                Player two
+                <br />
+                <input
+                  id="userName2"
+                  type="text"
+                  class="input"
+                  placeholder="github username"
+                  required
+                />
+              </label>
+              <button class="btn" id="btn2">submit</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="btn-battle-container">
+            <button class="btn-battle">Battle</button>
+          </div>
         </div>
       </div>
-    </main>
+    </div>
+
     <script src="./index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
